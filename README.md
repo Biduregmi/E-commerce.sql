@@ -66,9 +66,7 @@ Ecommerce-DBMS/
 │   └── 01_create_tables.sql
 │
 ├── README.md
-├── CHANGELOG.md
 ├── learning-notes.md
-└── .gitignore
 ```
 
 ---
