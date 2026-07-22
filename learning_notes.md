@@ -19,6 +19,22 @@ This document records what I learn while building this project. Each entry summa
 * Deciding how entities should be separated into different tables.
 * Understanding which constraints should be applied to each column.
 
+---
+
+## 2026-07-21
+
+### What I Learned
+
+* Foreign keys are used to establish relationships between tables.
+* A foreign key ensures that related data exists in the referenced table, helping maintain referential integrity.
+* It is often easier to create all tables first and then add foreign key constraints using `ALTER TABLE`.
+* An ER diagram serves as a blueprint, making it easier to identify the relationships that need to be implemented.
+
+### Challenges
+
+* Making sure every relationship in the ER diagram was correctly translated into SQL.
+* Avoiding duplicate or incorrect foreign key constraints.
+
 ### Next Goal
 
-Implement foreign key constraints to establish relationships between the tables.
+Insert realistic sample data into all tables and begin writing SQL queries to test the database.
