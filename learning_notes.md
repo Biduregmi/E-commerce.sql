@@ -21,7 +21,7 @@ This document records what I learn while building this project. Each entry summa
 
 ---
 
-## 2026-07-21
+## 2026-07-22
 
 ### What I Learned
 
@@ -33,6 +33,32 @@ This document records what I learn while building this project. Each entry summa
 ### Challenges
 
 * Making sure every relationship in the ER diagram was correctly translated into SQL.
+
+# Learning Notes
+
+This document records what I learn while building this project.
+
+---
+
+## 2026-07-24
+
+### What I Learned
+
+* Sample data should follow the relationships defined by foreign keys to avoid referential integrity errors.
+* Parent tables (such as Users and Categories) should be populated before child tables that reference them.
+* Realistic sample data makes it easier to test queries and verify that the database behaves as expected.
+* Order totals should match the combined values of their corresponding order items to maintain data consistency.
+* Updating incorrect values after insertion is sometimes necessary to keep related data accurate.
+
+### Challenges
+
+* Keeping IDs consistent across multiple related tables.
+* Ensuring that inserted records matched the relationships defined in the database schema.
+
+### Next Goal
+
+Write SQL queries to retrieve, filter, join, and summarize data from the database.
+
 * Avoiding duplicate or incorrect foreign key constraints.
 
 ### Next Goal
