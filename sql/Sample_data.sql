@@ -1,0 +1,99 @@
+-- USERS
+INSERT INTO Users VALUES ('USR001','Ram Sharma','ram.sharma@gmail.com','9811111111','ram123','Seller',DATE '2026-07-01');
+INSERT INTO Users VALUES ('USR002','Sita Karki','sita.karki@gmail.com','9811111112','sita123','Seller',DATE '2026-07-02');
+INSERT INTO Users VALUES ('USR003','Hari Thapa','hari.thapa@gmail.com','9811111113','hari123','Seller',DATE '2026-07-02');
+INSERT INTO Users VALUES ('USR004','Anita Rai','anita.rai@gmail.com','9811111114','anita123','Seller',DATE '2026-07-03');
+INSERT INTO Users VALUES ('USR005','Rohan Gautam','rohan.gautam@gmail.com','9811111115','rohan123','Customer',DATE '2026-07-03');
+INSERT INTO Users VALUES ('USR006','Priya Shrestha','priya.shrestha@gmail.com','9811111116','priya123','Customer',DATE '2026-07-04');
+INSERT INTO Users VALUES ('USR007','Bikash Adhikari','bikash.adhikari@gmail.com','9811111117','bikash123','Customer',DATE '2026-07-05');
+INSERT INTO Users VALUES ('USR008','Sneha Bhandari','sneha.bhandari@gmail.com','9811111118','sneha123','Customer',DATE '2026-07-05');
+INSERT INTO Users VALUES ('USR009','Kiran Poudel','kiran.poudel@gmail.com','9811111119','kiran123','Customer',DATE '2026-07-06');
+INSERT INTO Users VALUES ('USR010','Nisha KC','nisha.kc@gmail.com','9811111120','nisha123','Customer',DATE '2026-07-07');
+
+-- SELLERS
+INSERT INTO Sellers VALUES ('SEL001','USR001','Kathmandu Tech','PAN1001','NABIL001',DATE '2026-07-01');
+INSERT INTO Sellers VALUES ('SEL002','USR002','Everest Fashion','PAN1002','NABIL002',DATE '2026-07-02');
+INSERT INTO Sellers VALUES ('SEL003','USR003','Home Essentials','PAN1003','NABIL003',DATE '2026-07-02');
+INSERT INTO Sellers VALUES ('SEL004','USR004','Sports Nepal','PAN1004','NABIL004',DATE '2026-07-03');
+
+-- CUSTOMERS
+INSERT INTO Customers VALUES ('CUS001','USR005','Baneshwor, Kathmandu',120,DATE '2026-07-03');
+INSERT INTO Customers VALUES ('CUS002','USR006','Lalitpur',50,DATE '2026-07-04');
+INSERT INTO Customers VALUES ('CUS003','USR007','Pokhara',180,DATE '2026-07-05');
+INSERT INTO Customers VALUES ('CUS004','USR008','Bhaktapur',70,DATE '2026-07-05');
+INSERT INTO Customers VALUES ('CUS005','USR009','Butwal',20,DATE '2026-07-06');
+INSERT INTO Customers VALUES ('CUS006','USR010','Chitwan',95,DATE '2026-07-07');
+
+-- CATEGORIES
+INSERT INTO Categories VALUES ('CAT001','Electronics','Electronic gadgets');
+INSERT INTO Categories VALUES ('CAT002','Fashion','Clothing and accessories');
+INSERT INTO Categories VALUES ('CAT003','Home','Home appliances');
+INSERT INTO Categories VALUES ('CAT004','Sports','Sports equipment');
+INSERT INTO Categories VALUES ('CAT005','Books','Educational books');
+
+-- PRODUCTS
+INSERT INTO Products VALUES ('PRD001','SEL001','CAT001','Wireless Mouse','2.4GHz USB Wireless Mouse',1200,50,DATE '2026-07-08');
+INSERT INTO Products VALUES ('PRD002','SEL001','CAT001','Mechanical Keyboard','RGB Mechanical Keyboard',4500,30,DATE '2026-07-08');
+INSERT INTO Products VALUES ('PRD003','SEL002','CAT002','Men T-Shirt','Cotton Round Neck T-Shirt',900,100,DATE '2026-07-09');
+INSERT INTO Products VALUES ('PRD004','SEL002','CAT002','Women Jacket','Winter Jacket',3500,25,DATE '2026-07-09');
+INSERT INTO Products VALUES ('PRD005','SEL003','CAT003','Rice Cooker','1.8L Rice Cooker',4200,20,DATE '2026-07-10');
+INSERT INTO Products VALUES ('PRD006','SEL003','CAT003','Electric Kettle','1.5L Electric Kettle',1800,40,DATE '2026-07-10');
+INSERT INTO Products VALUES ('PRD007','SEL004','CAT004','Football','FIFA Size 5 Football',1500,35,DATE '2026-07-11');
+INSERT INTO Products VALUES ('PRD008','SEL004','CAT004','Cricket Bat','English Willow Cricket Bat',6500,15,DATE '2026-07-11');
+INSERT INTO Products VALUES ('PRD009','SEL001','CAT005','Oracle SQL Guide','Oracle SQL Learning Book',800,60,DATE '2026-07-12');
+INSERT INTO Products VALUES ('PRD010','SEL002','CAT005','Database Design','Database Design Fundamentals',950,45,DATE '2026-07-12');
+
+-- ORDERS
+INSERT INTO Orders VALUES ('ORD001','CUS001',DATE '2026-07-13',1200,'Delivered',DATE '2026-07-13');
+INSERT INTO Orders VALUES ('ORD002','CUS002',DATE '2026-07-13',5400,'Delivered',DATE '2026-07-13');
+INSERT INTO Orders VALUES ('ORD003','CUS003',DATE '2026-07-14',3500,'Shipped',DATE '2026-07-14');
+INSERT INTO Orders VALUES ('ORD004','CUS004',DATE '2026-07-14',4200,'Delivered',DATE '2026-07-14');
+INSERT INTO Orders VALUES ('ORD005','CUS005',DATE '2026-07-15',3000,'Pending',DATE '2026-07-15');
+INSERT INTO Orders VALUES ('ORD006','CUS006',DATE '2026-07-15',6500,'Delivered',DATE '2026-07-15');
+INSERT INTO Orders VALUES ('ORD007','CUS001',DATE '2026-07-16',1800,'Processing',DATE '2026-07-16');
+INSERT INTO Orders VALUES ('ORD008','CUS002',DATE '2026-07-16',800,'Delivered',DATE '2026-07-16');
+INSERT INTO Orders VALUES ('ORD009','CUS003',DATE '2026-07-17',1500,'Cancelled',DATE '2026-07-17');
+INSERT INTO Orders VALUES ('ORD010','CUS004',DATE '2026-07-17',4500,'Delivered',DATE '2026-07-17');
+
+-- ORDER ITEMS
+INSERT INTO Order_Items VALUES ('OI001','ORD001','PRD001',1,1200);
+INSERT INTO Order_Items VALUES ('OI002','ORD002','PRD002',1,4500);
+INSERT INTO Order_Items VALUES ('OI003','ORD002','PRD003',1,900);
+INSERT INTO Order_Items VALUES ('OI004','ORD003','PRD004',1,3500);
+INSERT INTO Order_Items VALUES ('OI005','ORD004','PRD005',1,4200);
+INSERT INTO Order_Items VALUES ('OI006','ORD005','PRD001',1,1200);
+INSERT INTO Order_Items VALUES ('OI007','ORD005','PRD007',1,1500);
+INSERT INTO Order_Items VALUES ('OI008','ORD005','PRD009',1,300);
+INSERT INTO Order_Items VALUES ('OI009','ORD006','PRD008',1,6500);
+INSERT INTO Order_Items VALUES ('OI010','ORD007','PRD006',1,1800);
+INSERT INTO Order_Items VALUES ('OI011','ORD008','PRD009',1,800);
+INSERT INTO Order_Items VALUES ('OI012','ORD009','PRD007',1,1500);
+INSERT INTO Order_Items VALUES ('OI013','ORD010','PRD002',1,4500);
+
+UPDATE Orders
+SET total_amount = 3500
+WHERE order_id = 'ORD005';
+
+-- PAYMENTS
+INSERT INTO Payments VALUES ('PAY001','ORD001','eSewa','Paid',1200,DATE '2026-07-13');
+INSERT INTO Payments VALUES ('PAY002','ORD002','Khalti','Paid',5400,DATE '2026-07-13');
+INSERT INTO Payments VALUES ('PAY003','ORD003','Cash on Delivery','Pending',3500,NULL);
+INSERT INTO Payments VALUES ('PAY004','ORD004','Bank Transfer','Paid',4200,DATE '2026-07-14');
+INSERT INTO Payments VALUES ('PAY005','ORD005','eSewa','Pending',3500,NULL);
+INSERT INTO Payments VALUES ('PAY006','ORD006','Cash on Delivery','Paid',6500,DATE '2026-07-15');
+INSERT INTO Payments VALUES ('PAY007','ORD007','Khalti','Pending',1800,NULL);
+INSERT INTO Payments VALUES ('PAY008','ORD008','eSewa','Paid',800,DATE '2026-07-16');
+INSERT INTO Payments VALUES ('PAY009','ORD009','Cash on Delivery','Cancelled',1500,NULL);
+INSERT INTO Payments VALUES ('PAY010','ORD010','Bank Transfer','Paid',4500,DATE '2026-07-17');
+
+-- DELIVERIES
+INSERT INTO Deliveries VALUES ('DEL001','ORD001','Ramesh BK','9800000001','Delivered',DATE '2026-07-14',DATE '2026-07-13');
+INSERT INTO Deliveries VALUES ('DEL002','ORD002','Suman KC','9800000002','Delivered',DATE '2026-07-14',DATE '2026-07-13');
+INSERT INTO Deliveries VALUES ('DEL003','ORD003','Bikash Rai','9800000003','In Transit',NULL,DATE '2026-07-14');
+INSERT INTO Deliveries VALUES ('DEL004','ORD004','Roshan Lama','9800000004','Delivered',DATE '2026-07-15',DATE '2026-07-14');
+INSERT INTO Deliveries VALUES ('DEL005','ORD005','Anil Gurung','9800000005','Pending',NULL,DATE '2026-07-15');
+INSERT INTO Deliveries VALUES ('DEL006','ORD006','Kamal Thapa','9800000006','Delivered',DATE '2026-07-16',DATE '2026-07-15');
+INSERT INTO Deliveries VALUES ('DEL007','ORD007','Rajesh Sharma','9800000007','Preparing',NULL,DATE '2026-07-16');
+INSERT INTO Deliveries VALUES ('DEL008','ORD008','Dipesh Karki','9800000008','Delivered',DATE '2026-07-17',DATE '2026-07-16');
+INSERT INTO Deliveries VALUES ('DEL009','ORD009','Nabin Magar','9800000009','Cancelled',NULL,DATE '2026-07-17');
+INSERT INTO Deliveries VALUES ('DEL010','ORD010','Suraj Bista','9800000010','Delivered',DATE '2026-07-18',DATE '2026-07-17');
