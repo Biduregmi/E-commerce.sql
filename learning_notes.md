@@ -33,10 +33,7 @@ This document records what I learn while building this project. Each entry summa
 ### Challenges
 
 * Making sure every relationship in the ER diagram was correctly translated into SQL.
-
-# Learning Notes
-
-This document records what I learn while building this project.
+* * Avoiding duplicate or incorrect foreign key constraints.
 
 ---
 
@@ -59,8 +56,8 @@ This document records what I learn while building this project.
 
 Write SQL queries to retrieve, filter, join, and summarize data from the database.
 
-* Avoiding duplicate or incorrect foreign key constraints.
+---
+# Learning Notes
 
-### Next Goal
+This document records what I learn while building this project.
 
-Insert realistic sample data into all tables and begin writing SQL queries to test the database.
