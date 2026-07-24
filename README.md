@@ -4,7 +4,7 @@
 
 This project is a relational database designed for an e-commerce platform using Oracle SQL.
 
-The objective is to build the database from the ground up by following database design principles, starting with an Entity-Relationship (ER) model and gradually implementing a complete relational database.
+The objective is to design and implement a complete database system by following database design principles, starting with an Entity-Relationship (ER) model and gradually building the database schema, relationships, and sample data.
 
 This project is being developed as a portfolio project to strengthen my understanding of Oracle SQL, database design, and relational database concepts.
 
@@ -12,7 +12,7 @@ This project is being developed as a portfolio project to strengthen my understa
 
 ## Features
 
-The database currently models the core components of an e-commerce platform, including:
+The database currently supports:
 
 * User Management
 * Seller Management
@@ -31,17 +31,17 @@ The database currently models the core components of an e-commerce platform, inc
 
 * Requirements analysis
 * Entity-Relationship (ER) diagram
-* Initial database schema
+* Database schema
 * Primary Key constraints
 * NOT NULL constraints
 * UNIQUE constraints
 * DEFAULT values
 * Foreign Key constraints
+* Sample data insertion
 * Appropriate Oracle SQL data types
 
 ### In Progress
 
-* Sample data insertion
 * SQL queries
 
 ### Planned
@@ -81,7 +81,7 @@ The database currently models the core components of an e-commerce platform, inc
 * [x] Design ER Diagram
 * [x] Create database schema
 * [x] Add Foreign Key constraints
-* [ ] Insert sample data
+* [x] Insert sample data
 * [ ] Write SQL queries
 * [ ] Create Views
 * [ ] Implement Stored Procedures
@@ -92,4 +92,4 @@ The database currently models the core components of an e-commerce platform, inc
 
 ## About This Project
 
-This repository documents my learning journey while designing and implementing a production-inspired e-commerce database. The project will continue to grow as I explore more Oracle SQL features and database best practices.
+This repository documents my learning journey while designing and implementing a production-inspired e-commerce database. Each stage of the project builds on the previous one to better understand relational database concepts and Oracle SQL.
