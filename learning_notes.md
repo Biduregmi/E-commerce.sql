@@ -52,12 +52,18 @@ This document records what I learn while building this project. Each entry summa
 * Keeping IDs consistent across multiple related tables.
 * Ensuring that inserted records matched the relationships defined in the database schema.
 
-### Next Goal
+---
 
-Write SQL queries to retrieve, filter, join, and summarize data from the database.
+## 2026-07-27
+### What I Learned
+Views are virtual tables that store a SQL query instead of duplicating data.
+Views simplify complex joins by allowing frequently used queries to be accessed with a simple SELECT.
+Database views can improve readability by presenting only the information needed for a specific task.
+Creating meaningful views, such as order summaries and product catalogs, makes the database easier to use for reporting and day-to-day operations.
+I learned that creating a view requires the CREATE VIEW privilege. Without it, Oracle returns an ORA-01031: insufficient privileges error.
+### Challenges
+Choosing which information should be included in each view to make it useful and practical.
+Resolving permission issues before creating database views.
 
 ---
-# Learning Notes
-
-This document records what I learn while building this project.
-
+\
