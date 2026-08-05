@@ -63,12 +63,11 @@ Indexes are created on frequently joined columns to improve query performance.
 
 ```text
 sql/
-├── 01_create_tables.sql
-├── 02_foreign_keys.sql
-├── 03_insert_sample_data.sql
-├── 04_queries.sql
-├── 05_views.sql
-├── 06_procedures.sql
-├── 07_triggers.sql
-└── 08_indexes.sql
+├── 01Create_tables.sql
+├── 02Constraints.sql
+├── 03sample_data.sql
+├── 04views.sql
+├── 05procedures.sql
+├── 06triggers.sql
+└── 07indexes.sql
 ```
